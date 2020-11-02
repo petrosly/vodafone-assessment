@@ -17,6 +17,8 @@ const PageNav = () => {
     fetchData();
   }, []);
 
+  let styles = { width: "20px" };
+
   return (
     <div className="page-nav">
       <button className="first-title">
@@ -25,7 +27,12 @@ const PageNav = () => {
       <button className="second-title">
         {titles.length > 0 ? titles[1].title : "Loading"}
       </button>
-      <img className="search-icon" src={searchIcon} alt="Search icon" />
+      <img
+        className="search-icon"
+        src={searchIcon}
+        alt="Search icon"
+        style={styles}
+      />
     </div>
   );
 };
