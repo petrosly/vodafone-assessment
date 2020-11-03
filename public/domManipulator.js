@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+function sliderHandler() {
   let firstSlide = document.querySelector("#first-slide");
   let secondSlide = document.querySelector("#second-slide");
   let thirdSlide = document.querySelector("#third-slide");
@@ -33,5 +33,18 @@ window.addEventListener("load", () => {
   //Initial load
   disableSlides();
   firstSlide.style.display = "flex";
-  console.log("dom-handler finished");
+}
+
+window.addEventListener("load", () => {
+  sliderHandler();
+
+  document.querySelector(".section-one-btn").addEventListener("click", () => {
+    console.log("section-one");
+    sliderHandler();
+  });
+
+  document.querySelector(".section-two-btn").addEventListener("click", () => {
+    console.log("section-two");
+    sliderHandler();
+  });
 });

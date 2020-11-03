@@ -3,7 +3,7 @@ import Tile from "./Tile";
 
 const TileGallery = (props) => {
   return (
-    <div>
+    <div className="tile-gallery">
       <Tile
         title={props.tiles.length > 0 ? props.tiles[0].title : "Loading"}
         description={

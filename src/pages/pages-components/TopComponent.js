@@ -1,12 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const TopComponent = (props) => {
   return (
     <div className="top-component">
       <h2>{props.description}</h2>
       <div className="sections">
-        <p className="section-one">Section 1</p>
-        <p className="section-two">Section 2</p>
+        <NavLink to="/" activeClassName="section-one-btn">
+          <p className="section-one">Section 1</p>
+        </NavLink>
+        <NavLink to="/section2" activeClassName="section-two-btn">
+          <p className="section-two">Section 2</p>
+        </NavLink>
       </div>
     </div>
   );

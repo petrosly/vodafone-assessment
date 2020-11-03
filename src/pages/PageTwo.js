@@ -19,14 +19,10 @@ const PageTwo = () => {
     fetchData();
   }, []);
 
-  if (page.length > 0) {
-    console.log(page);
-  }
-
   return (
     <div className="page-two">
       <Slider />
-      <div classname="content">
+      <div className="content">
         <TopComponent
           description={page.length > 0 ? page[0].description : "Loading"}
         />

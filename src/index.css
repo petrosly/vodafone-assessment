@@ -63,7 +63,8 @@ code {
 }
 /* Content HomePage SectionOne */
 .home-page-one .content,
-.home-page-two .main {
+.home-page-two .main,
+.page-two .content {
   width: 60vw;
   height: auto;
   margin: 0 auto;
@@ -205,6 +206,26 @@ code {
   background: #3590ae;
   width: 30%;
   height: 5vh;
+  margin-bottom: 1vh;
+  border: none;
+  padding: 0.2vh 1vh;
+  color: white;
+}
+/*Tile Gallery Page 2 */
+.tile-gallery {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.page-two .sections {
+  display: none;
+}
+.tile button {
+  background: #3590ae;
+  width: 30%;
+  height: 3vh;
   margin-bottom: 1vh;
   border: none;
   padding: 0.2vh 1vh;

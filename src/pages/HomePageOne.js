@@ -20,7 +20,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div class="home-page-one">
+    <div className="home-page-one">
       <Slider />
       <div className="content">
         <TopComponent
