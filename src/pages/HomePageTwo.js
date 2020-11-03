@@ -27,22 +27,26 @@ const HomePageTwo = () => {
         <TopComponent
           description={home.length > 0 ? home[0].description : "Loading"}
         />
-        <Services
-          title={home.length > 0 ? home[0].sections[1].title : "Loading"}
-          graphText={
-            home.length > 0 ? home[0].sections[1].graphText : "Loading"
-          }
-          stats={home.length > 0 ? home[0].sections[1].stats : "Loading"}
-        />
-        <Form
-          formText={home.length > 0 ? home[0].sections[1].formText : "Loading"}
-          formLabels={
-            home.length > 0 ? home[0].sections[1].formLabels : "Loading"
-          }
-          buttonText={
-            home.length > 0 ? home[0].sections[1].buttonText : "Loading"
-          }
-        />
+        <div className="main-content">
+          <Services
+            title={home.length > 0 ? home[0].sections[1].title : "Loading"}
+            graphText={
+              home.length > 0 ? home[0].sections[1].graphText : "Loading"
+            }
+            stats={home.length > 0 ? home[0].sections[1].stats : "Loading"}
+          />
+          <Form
+            formText={
+              home.length > 0 ? home[0].sections[1].formText : "Loading"
+            }
+            formLabels={
+              home.length > 0 ? home[0].sections[1].formLabels : "Loading"
+            }
+            buttonText={
+              home.length > 0 ? home[0].sections[1].buttonText : "Loading"
+            }
+          />
+        </div>
       </div>
     </div>
   );

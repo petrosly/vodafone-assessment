@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Form = (props) => {
   return (
     <div className="form-content">
-      <h1>{props.formText != null ? props.formText : "Loading"}</h1>
+      <h2>{props.formText != null ? props.formText : "Loading"}</h2>
       <p>
         We work with ecosystem leaders, corporation and startups worldwide. How
         can we help you?

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import HomePageOne from "./pages/HomePageOne";
+import PageTwo from "./pages/PageTwo";
 
-ReactDOM.render(<HomePageOne />, document.getElementById("root"));
+ReactDOM.render(<PageTwo />, document.getElementById("root"));
