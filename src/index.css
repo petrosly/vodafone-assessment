@@ -81,6 +81,10 @@ code {
   display: flex;
   justify-content: flex-end;
 }
+.sections a {
+  text-decoration: none;
+  color: black;
+}
 .section-two {
   margin-left: 2vh;
 }
@@ -230,4 +234,23 @@ code {
   border: none;
   padding: 0.2vh 1vh;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-content,
+  .services {
+    width: 100%;
+  }
+
+  .home-page-two .main-content {
+    flex-flow: column;
+  }
+
+  .tile-gallery {
+    flex-flow: column nowrap;
+  }
+
+  .tile button {
+    width: 50%;
+  }
 }

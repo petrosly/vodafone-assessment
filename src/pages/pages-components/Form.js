@@ -1,22 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function formValidation() {
-  console.log("blah");
-  let phoneNumber = document.querySelector(".telephoneNumber");
-  let password = document.querySelector(".password");
-
-  if (phoneNumber.length < 10 || phoneNumber.length > 14) {
-    alert("Phone number is not valid.");
-    return false;
-  }
-}
-
 const Form = (props) => {
-  useEffect(() => {
-    document.querySelector("form").addEventListener("submit", function () {
-      formValidation();
-    });
-  }, []);
   return (
     <div className="form-content">
       <h2>{props.formText != null ? props.formText : "Loading"}</h2>
