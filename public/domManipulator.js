@@ -5,6 +5,7 @@ function sliderHandler() {
 
   document.querySelectorAll(".first-button").forEach((btn) => {
     btn.addEventListener("click", function () {
+      console.log("event petros");
       disableSlides();
       firstSlide.style.display = "flex";
     });
@@ -12,6 +13,7 @@ function sliderHandler() {
 
   document.querySelectorAll(".second-button").forEach((btn) => {
     btn.addEventListener("click", function () {
+      console.log("event petros");
       disableSlides();
       secondSlide.style.display = "flex";
     });
@@ -19,6 +21,7 @@ function sliderHandler() {
 
   document.querySelectorAll(".third-button").forEach((btn) => {
     btn.addEventListener("click", function () {
+      console.log("event petros");
       disableSlides();
       thirdSlide.style.display = "flex";
     });
@@ -37,14 +40,4 @@ function sliderHandler() {
 
 window.addEventListener("load", () => {
   sliderHandler();
-
-  document.querySelector(".section-one-btn").addEventListener("click", () => {
-    console.log("section-one");
-    sliderHandler();
-  });
-
-  document.querySelector(".section-two-btn").addEventListener("click", () => {
-    console.log("section-two");
-    sliderHandler();
-  });
 });
