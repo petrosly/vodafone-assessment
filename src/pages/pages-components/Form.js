@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function formValidation() {
+  console.log("blah");
   let phoneNumber = document.querySelector(".telephoneNumber");
   let password = document.querySelector(".password");
 
@@ -10,11 +11,12 @@ function formValidation() {
   }
 }
 
-document.querySelector("form").addEventListener("submit", () => {
-  console.log("asdfsadf");
-});
-
 const Form = (props) => {
+  useEffect(() => {
+    document.querySelector("form").addEventListener("submit", function () {
+      formValidation();
+    });
+  }, []);
   return (
     <div className="form-content">
       <h2>{props.formText != null ? props.formText : "Loading"}</h2>
