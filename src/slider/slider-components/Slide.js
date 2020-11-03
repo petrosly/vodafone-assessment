@@ -6,10 +6,15 @@ const Slide = (props) => {
     backgroundImage: "url(" + props.image + ")",
   };
   return (
-    <div style={styles}>
+    <div className="slide" id={props.id} style={styles}>
       <PageNav />
       <h1>{props.title}</h1>
       <p>{props.subtitle}</p>
+      <ul className="carousel-controller">
+        <li className="first-button"></li>
+        <li className="second-button"></li>
+        <li className="third-button"></li>
+      </ul>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Slider from "./slider/Slider";
+import HomePageOne from "./pages/HomePageOne";
 
-ReactDOM.render(<Slider />, document.getElementById("root"));
+ReactDOM.render(<HomePageOne />, document.getElementById("root"));

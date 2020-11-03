@@ -21,28 +21,25 @@ function Slider() {
   }, []);
 
   return (
-    <div>
+    <div className="slider">
       <Slide
+        id="first-slide"
         title={slides.length > 0 ? slides[0].title : "Loading"}
         subtitle={slides.length > 0 ? slides[0].subtitle : "Loading"}
         image={slides.length > 0 ? slides[0].image : "Loading"}
-      >
-        <PageNav />
-      </Slide>
+      ></Slide>
       <Slide
+        id="second-slide"
         title={slides.length > 0 ? slides[1].title : "Loading"}
         subtitle={slides.length > 0 ? slides[1].subtitle : "Loading"}
         image={slides.length > 0 ? slides[1].image : "Loading"}
-      >
-        <PageNav />
-      </Slide>
+      ></Slide>
       <Slide
+        id="third-slide"
         title={slides.length > 0 ? slides[2].title : "Loading"}
         subtitle={slides.length > 0 ? slides[2].subtitle : "Loading"}
         image={slides.length > 0 ? slides[2].image : "Loading"}
-      >
-        <PageNav />
-      </Slide>
+      ></Slide>
     </div>
   );
 }

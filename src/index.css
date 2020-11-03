@@ -1,13 +1,88 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Slider */
+.slider {
+  width: 100vw;
+  height: auto;
+  color: white;
+}
+.slide {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.slide .carousel-controller {
+  list-style: none;
+  padding: 0;
+}
+.slide .carousel-controller li:before {
+  content: "\2022";
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  display: inline-block;
+  width: auto;
+}
+.slide .carousel-controller li {
+  display: inline-block;
+}
+.first-title,
+.second-title {
+  border: 0;
+  background: none;
+  color: white;
+}
+.second-title {
+  margin-right: 10vw;
+}
+.slider img {
+  filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(269deg)
+    brightness(101%) contrast(101%);
+}
+/* Page Nav */
+.page-nav {
+  display: flex;
+  height: 5vh;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+/* Content HomePage SectionOne */
+.home-page-one .content {
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+}
+/* Top Component */
+.top-component {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.sections {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.section-two {
+  margin-left: 2vh;
+}
+/* Image Gallery */
+.image-gallery {
+  display: grid;
 }
