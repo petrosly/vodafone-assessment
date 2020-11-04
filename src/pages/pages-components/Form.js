@@ -18,7 +18,7 @@ const Form = (props) => {
       alert("Add information");
       return false;
     }
-    if (formData.telephone.length < 10 || formData.telephone.lenght > 14) {
+    if (formData.telephone.length < 10 || formData.telephone.length > 14) {
       alert("Phone is not valid");
       return false;
     }
@@ -28,6 +28,10 @@ const Form = (props) => {
       formData.telephone[0] !== "+"
     ) {
       alert("Invalid phone start");
+      return false;
+    }
+    if (formData.password == null) {
+      alert("You must add a password that meets all the criteria");
       return false;
     }
     if (formData.password.length < 9) {
