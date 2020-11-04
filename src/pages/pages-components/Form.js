@@ -30,6 +30,10 @@ const Form = (props) => {
       alert("Invalid phone start");
       return false;
     }
+    if (!formData.email.includes("@") || !formData.email.includes(".")) {
+      alert("Invalid email format");
+      return false;
+    }
     if (formData.password == null) {
       alert("You must add a password that meets all the criteria");
       return false;
